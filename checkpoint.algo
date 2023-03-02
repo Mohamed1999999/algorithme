@@ -1,0 +1,26 @@
+ALGORITHM phrase
+VAR
+    phrase:CHAR
+    ccaractéres,cmots,cvoyelles:intiger
+    caractére,mot,voyelle:CHAR
+BEGIN
+    ccaractéres:=0
+    cmots:=0
+    cvoyelles:=0
+    write("Ecrire une phrase")
+    WHILE (caractére:=".") DO
+        ccaractéres:= len(caractére step -1)
+        Read(ccaractéres)
+        write("La phrase a",ccaractéres)
+    
+        FOR i FROM a TO z STEP   DO
+            cmots:=cmots+1
+            write("LE nombre de mots est",cmots)
+        END_FOR
+
+        IF (voyelle:=a or voyelle:=o or voyelle:=u or voyelle:=i or voyelle:=y or voyelle:=e) THEN
+            cvoyelles:=cvoyelles+1
+            write("Il y'a",cvoyelles,"voyelles dans la phrase")
+        END_IF
+    END_WHILE
+END
