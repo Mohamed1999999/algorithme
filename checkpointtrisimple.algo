@@ -1,0 +1,13 @@
+ALGORITHM InsertionSort(arr : array[1..n] of integers)
+
+FOR i FROM 2 TO n DO
+    value ← arr[i]
+    j ← i - 1
+    WHILE j >= 0 AND arr[j] > value DO
+        arr[j+1] ← arr[j]
+        j ← j - 1
+    END WHILE
+    arr[j+1] ← value
+END FOR
+
+END ALGORITHM
